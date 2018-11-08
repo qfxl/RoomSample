@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SampleApp</string>
+    <string name="delete_all">全部删除</string>
+    <string name="username">userName</string>
+    <string name="age">年龄</string>
+    <string name="done">完成</string>
+    <string name="save">save</string>
+</resources>
