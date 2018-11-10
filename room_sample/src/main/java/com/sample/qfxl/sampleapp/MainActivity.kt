@@ -25,6 +25,7 @@ import com.sample.qfxl.sampleapp.lifecycle.UserViewModel
 import com.sample.qfxl.sampleapp.lifecycle.UserViewModelFactory
 import com.sample.qfxl.sampleapp.room.User
 import com.sample.qfxl.sampleapp.room.AppDatabase
+import io.reactivex.Completable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

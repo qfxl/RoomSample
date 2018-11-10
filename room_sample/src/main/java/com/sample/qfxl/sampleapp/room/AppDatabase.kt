@@ -8,7 +8,7 @@ import java.io.File
 /**
  * Created by qfxl on 2018/10/23.
  */
-@Database(entities = [User::class], version = 1, exportSchema = false)
+@Database(entities = [User::class], version = 2, exportSchema = false)
 @TypeConverters(ListConverter::class, DateConverter::class)
 abstract class AppDatabase : RoomDatabase() {
     companion object {
@@ -31,6 +31,7 @@ abstract class AppDatabase : RoomDatabase() {
             val dbFile = File(dbDir, "Sample.db")
             return Room.databaseBuilder(context.applicationContext,
                     AppDatabase::class.java, dbFile.absolutePath)
+                    .addMigrations(AppRoomMigration(1, 2))
                     .build()
         }
 

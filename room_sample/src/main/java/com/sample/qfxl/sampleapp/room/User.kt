@@ -8,7 +8,7 @@ import java.util.*
 /**
  * Created by qfxl on 2018/10/23.
  */
-@Entity(tableName = "User")
+@Entity(tableName = "user")
 data class User(
         val name: String,
         val age: Int
@@ -20,4 +20,6 @@ data class User(
     var list: ArrayList<String>? = null
 
     var createDate = Date()
+
+    var gender: Int? = null
 }
