@@ -1,0 +1,22 @@
+ext {
+    android = [
+            compileSdkVersion: 27,
+            minSdkVersion    : 21,
+            targetSdkVersion : 27,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+    libsVersion = [
+            supportLibrary_version = "27.1.1",
+            kotlin_version = "1.2.41",
+            constraint_layout_version = "1.1.0"
+    ]
+
+    dependencies = [
+            appcompat_v7     : "com.android.support:appcompat-v7:$rootProject.supportLibrary_version",
+            kotlin           : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlin_version",
+            constraint_layout: "com.android.support.constraint:constraint-layout:$rootProject.constraint_layout_version",
+            recyclerView     : "com.android.support:recyclerview-v7:$rootProject.supportLibrary_version",
+            design           : "com.android.support:design:$rootProject.supportLibrary_version"
+    ]
+}

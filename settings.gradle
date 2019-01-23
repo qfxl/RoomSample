@@ -1,1 +1,1 @@
-include ':room_sample'
+include ':room_sample', ':splash_sample'

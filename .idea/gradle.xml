@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/room_sample" />
+            <option value="$PROJECT_DIR$/splash_sample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
